@@ -1,3 +1,5 @@
+import 'package:custem_textfild/main.dart';
+import 'package:custem_textfild/only_text.dart';
 import 'package:flutter/material.dart';
 
 class SearchBarScreen extends StatefulWidget {
@@ -164,6 +166,16 @@ class _SearchBarScreenState extends State<SearchBarScreen> {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          Navigator.push(context, MaterialPageRoute(
+            builder: (context) {
+              return AutoCompleteTextField();
+            },
+          ));
+        },
+        child: Icon(Icons.navigate_next_rounded),
       ),
     );
   }
