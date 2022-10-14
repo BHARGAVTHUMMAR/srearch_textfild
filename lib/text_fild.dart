@@ -1,4 +1,3 @@
-import 'package:custem_textfild/main.dart';
 import 'package:custem_textfild/only_text.dart';
 import 'package:flutter/material.dart';
 
