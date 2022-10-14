@@ -76,6 +76,17 @@ class _AutoCompleteTextFieldState extends State<AutoCompleteTextField> {
                 TextField(
                   controller: serchController,
                   onChanged: (value) => _runFilter(value),
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(
+                        vertical: 10.0, horizontal: 15),
+                    hintText: "Search",
+                    suffixIcon: const Icon(Icons.search),
+                    // prefix: Icon(Icons.search),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                      borderSide: const BorderSide(),
+                    ),
+                  ),
                 ),
               ],
             ),
