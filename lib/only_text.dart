@@ -71,8 +71,10 @@ class _AutoCompleteTextFieldState extends State<AutoCompleteTextField> {
                           },
                         );
                       }))
-                    : SizedBox(),
-
+                    : const Text(
+                        'No results found Please try with diffrent search',
+                        style: TextStyle(fontSize: 15),
+                      ),
                 TextField(
                   controller: serchController,
                   onChanged: (value) => _runFilter(value),
