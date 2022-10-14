@@ -144,7 +144,7 @@ class _SearchBarScreenState extends State<SearchBarScreen> {
                     )
                   : const Text(
                       'No results found Please try with diffrent search',
-                      style: TextStyle(fontSize: 24),
+                      style: TextStyle(fontSize: 15),
                     ),
             ),
             TextField(
